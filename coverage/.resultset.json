@@ -9,9 +9,14 @@
         1,
         null,
         1,
-        1,
-        0,
         null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
         null,
         null,
         1,
@@ -47,6 +52,17 @@
       ],
       "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/models/user.rb": [
         1,
+        null
+      ],
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/features/list_space_management_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/listing_spec.rb": [
@@ -93,6 +109,6 @@
         null
       ]
     },
-    "timestamp": 1477930091
+    "timestamp": 1477931077
   }
 }
