@@ -15,4 +15,5 @@ group :test do
   gem 'rake'
   gem 'rubocop', require: false
   gem 'coveralls', require: false
+	gem 'timecop'
 end

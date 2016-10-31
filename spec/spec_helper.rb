@@ -1,10 +1,13 @@
 require 'coveralls'
 require 'simplecov'
+require 'timecop'
+
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 
 require 'features/web_helpers'
+
 
 SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
