@@ -1,11 +1,8 @@
+ENV["RACK_ENV"] ||= 'development'
 require 'sinatra/base'
-
-require_relative 'models/listing'
-require_relative 'models/space'
-require_relative 'models/user'
+require_relative 'datamapper_setup'
 
 class Makersbnb < Sinatra::Base
-enable :sessions
 
   get '/' do
     erb :index
