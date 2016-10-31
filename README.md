@@ -2,7 +2,8 @@ ___
 ## MakersBnB
 ___
 ```
-As a host, so my space can be available to rent
+As a host,
+so my space can be available to rent
 I can list a space
 ```
 ```
