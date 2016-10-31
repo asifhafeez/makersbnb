@@ -20,4 +20,8 @@ class Space
   def available?
     @available
   end
+
+  def blank_method
+  end
+  
 end
