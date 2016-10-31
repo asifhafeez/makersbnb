@@ -1,8 +1,8 @@
 require 'sinatra/base'
 
-# require_relative 'models/listing'
-# require_relative 'models/space'
-# require_relative 'models/user'
+require_relative 'models/listing'
+require_relative 'models/space'
+require_relative 'models/user'
 
 class Makersbnb < Sinatra::Base
   get '/' do
