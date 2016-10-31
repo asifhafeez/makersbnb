@@ -7,7 +7,8 @@ so my space can be available to rent
 I can list a space
 ```
 ```
-As a host, so I can rent multiple spaces
+As a host,
+so I can rent multiple spaces
 I would like to list multiple spaces
 ```
 ```
