@@ -5,6 +5,7 @@ require_relative 'models/space'
 require_relative 'models/user'
 
 class Makersbnb < Sinatra::Base
+enable :sessions
 
   get '/' do
     erb :index
