@@ -1,0 +1,53 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/roystonHenson/Projects/makersbnb/app/app.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/roystonHenson/Projects/makersbnb/app/models/listing.rb": [
+        1,
+        null
+      ],
+      "/Users/roystonHenson/Projects/makersbnb/app/models/space.rb": [
+        1,
+        null
+      ],
+      "/Users/roystonHenson/Projects/makersbnb/app/models/user.rb": [
+        1,
+        null
+      ],
+      "/Users/roystonHenson/Projects/makersbnb/spec/listing_spec.rb": [
+        1,
+        null,
+        null
+      ],
+      "/Users/roystonHenson/Projects/makersbnb/spec/space_spec.rb": [
+        1,
+        null
+      ],
+      "/Users/roystonHenson/Projects/makersbnb/spec/user_spec.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1477929604
+  }
+}
