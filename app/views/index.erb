@@ -36,14 +36,24 @@
 
     <div class="row">
       <div class="col-md-8">
-        <ul>
+        <ul id="form-list">
           <% @spaces.each do |space| %>
-            <li>
-              <span>Host:</span>       <%= space.host %>        <br>
+            <li class="form-item">
+              <div class="row space-title">
+                <div class="col-md-8">
+                  <h3><%= space.name %></h3>
+                </div>
+                <div class="col-md-4">
+                  <h3>£<%= space.price %>  </h3>
+                </div>
+              </div>
+
+              <br>
+
+
+              <%= space.description %> <br>
+              <span>Host:</span>       <%= space.host %>
               <span>Email:</span>      <%= space.email %>       <br>
-              <span>Name:</span>       <%= space.name %>        <br>
-              <span>Price:</span>      <%= space.price %>       <br>
-              <span>Description: </span><%= space.description %> <br>
           </li> <br>
           <% end %>
         </ul>
