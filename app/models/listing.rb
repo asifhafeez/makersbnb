@@ -1,5 +1,9 @@
 class Listing
 
+  include DataMapper::Resource
+
+  property :id,             Serial
+  
   attr_reader :spaces
 
   def initialize
@@ -10,4 +14,4 @@ class Listing
     @spaces << space
   end
 
-end 
+end

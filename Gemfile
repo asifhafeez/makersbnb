@@ -17,4 +17,5 @@ group :test do
   gem 'rubocop', require: false
   gem 'coveralls', require: false
 	gem 'timecop'
+	gem 'pry-nav', group: [:development, :test]
 end
