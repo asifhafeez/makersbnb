@@ -31,9 +31,9 @@ describe Space do
       expect(space.to).to eq DateTime.new(2016,11,1)
     end
 
-    it "the space is available to rent" do
-      expect(space).to be_available
-    end
+    # it "the space is available to rent" do
+    #   expect(space).to be_available
+    # end
   end
   
 end
