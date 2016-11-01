@@ -16,24 +16,13 @@ class Space
 
   attr_reader :name, :price, :description, :from, :to, :available, :host
 
-  # def initialize(host, email, name, price, description, from, to)
-  #   @host = host
-  #   @email = email
-  #   @name = name
-  #   @price = price
-  #   @description = description
-  #   @from = from
-  #   @to = to
-  #   check_availability
+  # def check_availability
+  #   date = DateTime.now
+  #   @available = true if date > @from && date < @to
   # end
-
-  def check_availability
-    date = DateTime.now
-    @available = true if date > @from && date < @to
-  end
-
-  def available?
-    @available
-  end
+  #
+  # def available?
+  #   @available
+  # end
 
 end

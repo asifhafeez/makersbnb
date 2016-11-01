@@ -6,6 +6,7 @@ require 'capybara/rspec'
 require 'rspec'
 require 'timecop'
 require 'features/web_helpers'
+require 'dm-rspec'
 
 
 SimpleCov.formatters = [
@@ -38,6 +39,7 @@ Capybara.app = Makersbnb
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  config.include(DataMapper::Matchers) 
   # config.before(:suite) do
   #   DatabaseCleaner.strategy = :truncation
   #   DatabaseCleaner.clean_with(:truncation)
