@@ -6,6 +6,6 @@ class Listing
 
   property :id,             Serial
 
-  has n, :spaces
+  # has n, :spaces
 
 end
