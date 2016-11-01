@@ -1,13 +1,10 @@
-ENV['RACK_ENV'] = 'test'
-
 require 'coveralls'
 require 'simplecov'
-require 'timecop'
+require 'database_cleaner'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
-require 'database_cleaner'
-
+require 'timecop'
 require 'features/web_helpers'
 
 
@@ -41,18 +38,18 @@ Capybara.app = Makersbnb
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.clean_with(:truncation)
-  end
+  # config.before(:suite) do
+  #   DatabaseCleaner.strategy = :truncation
+  #   DatabaseCleaner.clean_with(:truncation)
+  # end
 
-  config.before(:each) do
-    DatabaseCleaner.start
-  end
+  # config.before(:each) do
+  #   DatabaseCleaner.start
+  # end
 
-  config.after(:each) do
-    DatabaseCleaner.clean
-  end
+  # config.after(:each) do
+  #   DatabaseCleaner.clean
+  # end
 
   config.include Capybara::DSL
   # rspec-expectations config goes here. You can use an alternate
