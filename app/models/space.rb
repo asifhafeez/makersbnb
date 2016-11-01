@@ -5,6 +5,8 @@ class Space
 
   include DataMapper::Resource
 
+  belongs_to :listing
+
   property :id,             Serial
   property :host,           String
   property :email,          String
@@ -13,16 +15,5 @@ class Space
   property :description,    String
   #property :from,           Date
   #property :to,             Date
-
-  attr_reader :name, :price, :description, :from, :to, :available, :host
-
-  # def check_availability
-  #   date = DateTime.now
-  #   @available = true if date > @from && date < @to
-  # end
-  #
-  # def available?
-  #   @available
-  # end
 
 end
