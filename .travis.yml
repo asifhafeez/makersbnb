@@ -3,8 +3,6 @@ language: ruby
 rvm:
  - 2.2.3
 
-script: bundle exec rspec spec
-
 before_install:
  - sed -i '2d' Gemfile
  - sudo apt-get update -qq
