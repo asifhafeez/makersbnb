@@ -1,8 +1,9 @@
 class Space
 
-  attr_reader :name, :price, :description, :from, :to, :available
+  attr_reader :name, :price, :description, :from, :to, :available, :host
 
-  def initialize(name, price, description, from, to)
+  def initialize(host, name, price, description, from, to)
+    @host = host
     @name = name
     @price = price
     @description = description
@@ -19,4 +20,8 @@ class Space
   def available?
     @available
   end
+
+  def blank_method
+  end
+  
 end
