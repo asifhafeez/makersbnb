@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/app.rb": [
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/app.rb": [
         1,
         1,
         1,
@@ -9,24 +9,22 @@
         1,
         null,
         1,
-        2,
-        2,
+        10,
+        10,
         null,
         null,
         1,
-        1,
-        1,
+        5,
         null,
         null,
-        1,
-        1,
-        1,
+        5,
         null,
         null,
         1,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/datamapper_setup.rb": [
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/datamapper_setup.rb": [
+        1,
         1,
         1,
         null,
@@ -39,38 +37,39 @@
         1,
         1
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/space.rb": [
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/models/space.rb": [
         1,
         null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         null,
         null,
         null,
-        null
-      ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/listing.rb": [
         1,
-        null,
         1,
-        null,
         1,
-        null,
+        1,
+        1,
         1,
         null,
         null,
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/user.rb": [
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/models/listing.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/models/user.rb": [
         1,
         null,
         1,
@@ -86,7 +85,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/listing_spec.rb": [
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/listing_spec.rb": [
         1,
         null,
         null,
@@ -101,7 +100,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/space_spec.rb": [
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/space_spec.rb": [
         1,
         null,
         2,
@@ -112,7 +111,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/user_spec.rb": [
+      "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/user_spec.rb": [
         1,
         null,
         3,
@@ -130,6 +129,6 @@
         null
       ]
     },
-    "timestamp": 1478019809
+    "timestamp": 1478022004
   }
 }
