@@ -36,6 +36,13 @@
 
     <div class="row">
       <div class="col-md-4">
+        <% if flash[:notice] %>
+          <% flash[:notice].each do |error| %>
+            <%= error %>
+          <% end %>
+        <% end %>
+        12345
+        ABCDE
       </div>
       <div class="col-md-4">
         <p>Please enter the details of the space available to rent below:</p>

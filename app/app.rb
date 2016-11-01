@@ -7,6 +7,8 @@ class Makersbnb < Sinatra::Base
 
   register Sinatra::Flash
 
+  set :sessions, true
+  
   get '/' do
   	@spaces = Space.all
     erb :index
@@ -18,6 +20,7 @@ class Makersbnb < Sinatra::Base
   									  description: params[:description])
     if space.save
       flash.keep[:notice] = ["Your space was listed!"]
+      p flash[:notice]
     else
       flash.keep[:notice] = space.errors.full_messages
     end
