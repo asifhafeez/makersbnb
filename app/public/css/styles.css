@@ -6,11 +6,18 @@ h1 {
   padding: auto;
 }
 
-/*.form {
-  text-align: center;
-  display:inline-block;
-}*/
+.text-area {
+  height: 4px ;
+  width: 360px ;
+}
 
-/*body {
-  border: solid red 2px;
-}*/
+.center {
+  text-align: center;
+}
+
+span {
+  font-weight:bold;
+}
+ul {
+  list-style-type: none;
+}

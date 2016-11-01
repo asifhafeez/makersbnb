@@ -35,7 +35,19 @@
 
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-8">
+        <ul>
+          <% @spaces.each do |space| %>
+            <li>
+              <span>Host:</span>       <%= space.host %>        <br>
+              <span>Email:</span>      <%= space.email %>       <br>
+              <span>Name:</span>       <%= space.name %>        <br>
+              <span>Price:</span>      <%= space.price %>       <br>
+              <span>Description: </span><%= space.description %> <br>
+          </li> <br>
+          <% end %>
+        </ul>
+
       </div>
       <div class="col-md-4">
         <p>Please enter the details of the space available to rent below:</p>
@@ -58,26 +70,19 @@
           </div>
           <div class="form-group">
             <label for="description">Description:</label>
-            <textarea class="form-control" name="description"></textarea>
+            <textarea class="form-control text-area" name="description"></textarea>
           </div>
-         <!--  <div class="form-group">
-            <label for="available_from">Available from:</label>
-            <input type="text" class="form-control" name="available_from">
-          </div>
-          <div class="form-group">
-            <label for="available_to">To:</label>
-            <input type="text" class="form-control" name="available_to">
-          </div> -->
           <div class="button">
             <input class="btn btn-success"type="submit" value="Add Space">
           </div>
         </form>
-      </div>
-      <div class="col-md-4">
       </div>
     </div>
   </div>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
+<div class="panel panel-default">
+  <div class="panel-footer center">Panel footer</div>
+</div>
 </html>
