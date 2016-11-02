@@ -17,6 +17,7 @@ class Makersbnb < Sinatra::Base
   post '/spaces' do
   	space = Space.new(host: params[:host], email: params[:email],
   	 									name: params[:name], price: params[:price],
+                      from: params[:from], to: params[:to],
   									  description: params[:description])
     if space.save
       flash.keep[:notice] = ["Your space was listed!"]

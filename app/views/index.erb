@@ -50,16 +50,30 @@
                 <h3>£<%= "%.2f" % space.price.truncate(2) %>  </h3>
               </div>
             </div>
+
+
+              <div class="row">
+                <div class="col-md-8 space-title">
+                </div>
+                <div class="col-md-4 space-title">
+                  <p id= "available-tag"> Available: </p>
+                  <p> from  <span class="availability"> <%= space.from %> </span> </p>
+                  <p> to    <span class="availability"> <%= space.to %> </span> </p>
+                </div>
+              </div>
+
+
+
             <hr id="page-line">
             <div id="description">
               <%= space.description %> <br>
             </div>
             <div class="row">
               <div class="col-md-6 host-details">
-                <span>Host:</span>  <%= space.host %>
+                <span class="bold">Host:</span>  <%= space.host %>
               </div>
               <div class="col-md-6 host-details">
-                <span>Email:</span> <%= space.email %>
+                <span class="bold">Email:</span> <%= space.email %>
               </div>
             </div>
           </li> <br>
@@ -68,19 +82,19 @@
       </div>
       <div class="col-sm-4">
         <p id="enter-details">Please enter the details of the space available to rent below:</p>
-       
-          
+
+
         <% if flash[:notice] %>
-           <div class="alert alert-info">
-            <ul class = "unordered-list">
-             <% flash[:notice].each do |error| %>
-               <li><%= error %></li>
-             <% end %>
-            </ul>
-          </div>
-       <% end %>
-          
-        
+        <div class="alert alert-info">
+          <ul class = "unordered-list">
+            <% flash[:notice].each do |error| %>
+            <li><%= error %></li>
+            <% end %>
+          </ul>
+        </div>
+        <% end %>
+
+
         <p id="required">* required</p>
         <form action="/spaces" method="post">
           <div class="form-group">
@@ -99,6 +113,24 @@
             <label for="price">Price *:</label>
             <input type="number" class="form-control" name="price" placeholder="price" >
           </div>
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="from">Available From *:</label>
+                <input type="date" class="form-control" name="from" placeholder="available from" >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="to">Available To *:</label>
+                <input type="date" class="form-control" name="to" placeholder="available to" >
+              </div>
+            </div>
+          </div>
+
+
           <div class="form-group">
             <label for="description">Description:</label>
             <textarea class="form-control text-area" name="description" placeholder="enter space description here"></textarea>
@@ -114,8 +146,8 @@
   <script src="js/bootstrap.js"></script>
 </body>
 <footer>
- <div class="panel panel-default">
-   <div class="panel-footer center">Panel footer</div>
- </div>
+  <div class="panel panel-default">
+    <div class="panel-footer center">Panel footer</div>
+  </div>
 </footer>
 </html>

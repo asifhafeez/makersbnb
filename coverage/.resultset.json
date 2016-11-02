@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/app.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/app.rb": [
         1,
         1,
         1,
@@ -14,8 +14,8 @@
         1,
         null,
         1,
-        10,
-        10,
+        8,
+        8,
         null,
         null,
         1,
@@ -23,18 +23,18 @@
         null,
         null,
         5,
-        2,
-        2,
+        0,
+        0,
         null,
         3,
         null,
-        5,
+        3,
         null,
         null,
         1,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/datamapper_setup.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/datamapper_setup.rb": [
         1,
         1,
         1,
@@ -48,7 +48,7 @@
         1,
         1
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/space.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/models/space.rb": [
         1,
         null,
         1,
@@ -67,7 +67,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/listing.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/models/listing.rb": [
         1,
         null,
         1,
@@ -80,7 +80,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/user.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/models/user.rb": [
         1,
         null,
         1,
@@ -96,7 +96,59 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/listing_spec.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/features/list_space_management_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        3,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/listing_spec.rb": [
         1,
         null,
         null,
@@ -111,7 +163,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/space_spec.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/space_spec.rb": [
         1,
         null,
         1,
@@ -173,7 +225,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/user_spec.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/user_spec.rb": [
         1,
         null,
         3,
@@ -191,6 +243,6 @@
         null
       ]
     },
-    "timestamp": 1478105475
+    "timestamp": 1478106619
   }
 }
