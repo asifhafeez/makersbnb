@@ -39,7 +39,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
-        <ul id="form-list">
+        <ul class="unordered-list">
           <% @spaces.each do |space| %>
           <li class="form-item">
             <div class="row ">
@@ -68,11 +68,19 @@
       </div>
       <div class="col-sm-4">
         <p id="enter-details">Please enter the details of the space available to rent below:</p>
+       
+          
         <% if flash[:notice] %>
-         <% flash[:notice].each do |error| %>
-           <%= error %>
-         <% end %>
+           <div class="alert alert-info">
+            <ul class = "unordered-list">
+             <% flash[:notice].each do |error| %>
+               <li><%= error %></li>
+             <% end %>
+            </ul>
+          </div>
        <% end %>
+          
+        
         <p id="required">* required</p>
         <form action="/spaces" method="post">
           <div class="form-group">
