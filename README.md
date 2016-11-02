@@ -14,7 +14,7 @@ ___
 ```
 ~~As a host,~~
 ~~So that guests know when my space is available,~~
-~~I would like to offer a range of available dates~~
+I would like to offer a range of available dates
 ```
 ```
 ~~As a host,~~
@@ -32,27 +32,27 @@ ___
 ~~I would like to give my space a price~~
 ```
 ```
-As a rentee,
+As a guest,
+To avoid making an incomplete booking
+I would like to see available spaces only
+```
+```
+As a guest,
 So that I can hire a space,
-I would like to request to hire a space
+I would like to create a booking request on an available space
 ```
 ```
-As a rentee,
-To specify how long I want the space
-I can rent for a night
+As a guest,
+To inform a host of how long I want to stay in their space
+I want to use a booking request to detail the number of nights I want to stay
 ```
 ```
 As a host,
-To confirm the rentees request
-I would like to approve the request
+To confirm a guests booking request
+I would like to confirm a booking request
 ```
 ```
-As a rentee,
-To avoid an incomplete booking
-I would like to only see available spaces
-```
-```
-As a rentee,
-Until a host confirms a booking
+As a guest,
+Until a host confirms a booking on a space
 I can still book a space thats available
 ```
