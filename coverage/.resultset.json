@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/app.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/app/app.rb": [
         1,
         1,
         1,
@@ -12,11 +12,6 @@
         1,
         null,
         1,
-<<<<<<< HEAD
-        null,
-        null,
-        1,
-=======
         null,
         1,
         10,
@@ -27,6 +22,7 @@
         5,
         null,
         null,
+        5,
         5,
         2,
         2,
@@ -34,13 +30,12 @@
         3,
         null,
         5,
->>>>>>> 43cf05065e1165f8d4548128d0223985d0fc0040
         null,
         null,
         1,
         null
       ],
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/datamapper_setup.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/app/datamapper_setup.rb": [
         1,
         1,
         1,
@@ -54,7 +49,7 @@
         1,
         1
       ],
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/models/space.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/app/models/space.rb": [
         1,
         null,
         1,
@@ -73,7 +68,7 @@
         null,
         null
       ],
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/models/listing.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/app/models/listing.rb": [
         1,
         null,
         1,
@@ -86,7 +81,7 @@
         null,
         null
       ],
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/app/models/user.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/app/models/user.rb": [
         1,
         null,
         1,
@@ -102,7 +97,7 @@
         null,
         null
       ],
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/listing_spec.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/spec/listing_spec.rb": [
         1,
         null,
         null,
@@ -117,7 +112,7 @@
         null,
         null
       ],
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/space_spec.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/spec/space_spec.rb": [
         1,
         null,
         2,
@@ -128,7 +123,7 @@
         null,
         null
       ],
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/user_spec.rb": [
+      "/Users/roystonHenson/Projects/makersbnb/spec/user_spec.rb": [
         1,
         null,
         3,
@@ -146,10 +141,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1478021638
-=======
-    "timestamp": 1478023403
->>>>>>> 43cf05065e1165f8d4548128d0223985d0fc0040
+    "timestamp": 1478097101
   }
 }

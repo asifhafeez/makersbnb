@@ -8,7 +8,7 @@ class Makersbnb < Sinatra::Base
   register Sinatra::Flash
 
   set :sessions, true
-  
+
   get '/' do
   	@spaces = Space.all
     erb :index

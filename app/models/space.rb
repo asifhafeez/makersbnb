@@ -10,7 +10,7 @@ class Space
   property :email,          String
   property :name,           String, required: true
   property :price,          String, required: true
-  property :description,    String, required: true
+  property :description,    Text, required: true
   #property :from,           Date
   #property :to,             Date
 
