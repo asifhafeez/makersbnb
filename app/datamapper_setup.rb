@@ -3,7 +3,7 @@ require 'dm-postgres-adapter'
 require 'dm-validations'
 
 require_relative 'models/space'
-require_relative 'models/listing'
+require_relative 'models/booking_request'
 require_relative 'models/user'
 
 # DataMapper::Logger.new($stdout, :debug)

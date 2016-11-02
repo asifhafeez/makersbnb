@@ -1,6 +1,6 @@
  require 'spec_helper'
 
-  feature 'list space' do
+  feature 'Listing a space' do
     scenario 'let a user add a space for rent from MakersBnB' do
       visit '/'
       add_space_form
@@ -46,5 +46,4 @@
       expect{click_button 'Add Space'}.to_not change{Space.count}
       expect(page).to have_content("Description must not be blank")
     end
-
   end
