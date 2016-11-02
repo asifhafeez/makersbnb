@@ -7,83 +7,91 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
   <nav class="navbar navbar-default">
     <div class="container">
-      <div>
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand">MakersBnB</a>
-          <ul class="nav navbar-nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">MakersBnB</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Sign Up</a></li>
           <li><a href="#">Login</a></li>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </nav>
-  <div class="jumbotron page-header">
-    <h1><small>Welcome to MakersBnB!</small></h1>
-  </div>
-
-
-
   <div class="container">
-
-
+    <div class="jumbotron page-header">
+      <h1><small>Welcome to MakersBnB!</small></h1>
+      <p>...some welcome spiel here...</p>
+    </div>
+  </div>
+  <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-sm-8">
         <ul id="form-list">
           <% @spaces.each do |space| %>
-            <li class="form-item">
-              <div class="row space-title">
-                <div class="col-md-8">
-                  <h3><%= space.name %></h3>
-                </div>
-                <div class="col-md-4">
-                  <h3>£<%= space.price %>  </h3>
-                </div>
+          <li class="form-item">
+            <div class="row ">
+              <div class="col-md-8 space-title">
+                <h3><%= space.name %></h3>
               </div>
-
-              <br>
-
-
+              <div class="col-md-4 space-title">
+                <h3>£<%= space.price %>  </h3>
+              </div>
+            </div>
+            <hr id="page-line">
+            <div id="description">
               <%= space.description %> <br>
-              <span>Host:</span>       <%= space.host %>
-              <span>Email:</span>      <%= space.email %>       <br>
+            </div>
+            <div class="row">
+              <div class="col-md-6 host-details">
+                <span>Host:</span>  <%= space.host %>
+              </div>
+              <div class="col-md-6 host-details">
+                <span>Email:</span> <%= space.email %>
+              </div>
+            </div>
           </li> <br>
           <% end %>
         </ul>
-
       </div>
-      <div class="col-md-4">
-        <p>Please enter the details of the space available to rent below:</p>
+      <div class="col-sm-4">
+        <p id="enter-details">Please enter the details of the space available to rent below:</p>
+        <p id="required">* required</p>
         <form action="/spaces" method="post">
           <div class="form-group">
-            <label for="host">Host's name:</label>
-            <input type="text" class="form-control" name="host">
+            <label for="host">Host's name *:</label>
+            <input type="text" class="form-control" name="host" placeholder="your name" required="true">
           </div>
           <div class="form-group">
-            <label for="email">Host's email:</label>
-            <input type="email" class="form-control" name="email">
+            <label for="email">Host's email *:</label>
+            <input type="email" class="form-control" name="email" placeholder="your email" required="true">
           </div>
           <div class="form-group">
-            <label for="name">Space name:</label>
-            <input type="text" class="form-control" name="name">
+            <label for="name">Space name *:</label>
+            <input type="text" class="form-control" name="name" placeholder="space name" required="true">
           </div>
           <div class="form-group">
-            <label for="price">Price:</label>
-            <input type="text" class="form-control" name="price">
+            <label for="price">Price *:</label>
+            <input type="number" class="form-control" name="price" placeholder="price" required="true">
           </div>
           <div class="form-group">
             <label for="description">Description:</label>
-            <textarea class="form-control text-area" name="description"></textarea>
+            <textarea class="form-control text-area" name="description" placeholder="enter space description here"></textarea>
           </div>
-          <div class="button">
-            <input class="btn btn-success"type="submit" value="Add Space">
+          <div class="button text-center">
+            <input class="btn btn-success btn-lg "type="submit" value="Add Space">
           </div>
         </form>
       </div>
@@ -92,7 +100,9 @@
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
-<div class="panel panel-default">
-  <div class="panel-footer center">Panel footer</div>
-</div>
+<footer>
+  <div class="panel panel-default">
+    <div class="panel-footer center">Panel footer</div>
+  </div>
+</footer>
 </html>
