@@ -47,7 +47,7 @@
                 <h3><%= space.name %></h3>
               </div>
               <div class="col-md-4 space-title">
-                <h3>£<%= space.price %>  </h3>
+                <h3>£<%= "%.2f" % space.price.truncate(2) %>  </h3>
               </div>
             </div>
             <hr id="page-line">
