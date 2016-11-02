@@ -6,6 +6,8 @@ ruby '2.2.3'
 gem 'sinatra'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
+gem 'pg'
+gem 'sinatra-flash'
 
 group :test do
 	gem 'rspec-sinatra'
@@ -15,4 +17,7 @@ group :test do
   gem 'rake'
   gem 'rubocop', require: false
   gem 'coveralls', require: false
+	gem 'timecop'
+	gem 'dm-rspec'
+	gem 'pry-nav', group: [:development, :test]
 end

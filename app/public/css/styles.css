@@ -1,0 +1,77 @@
+h1 {
+  text-align: center;
+}
+/*p {
+  color: #fff
+}*/
+
+.form_data {
+  padding: auto;
+}
+
+.text-area {
+  height: 4px ;
+  width: 360px ;
+}
+
+.center {
+  text-align: center;
+}
+
+span {
+  font-weight:bold;
+}
+.unordered-list {
+  list-style-type: none;
+  padding: 50px;
+  border: solid #adccff 1px;
+}
+
+.form-item {
+  background-color: #e1e3e8;
+  border: solid #adccff 1px;
+  padding: 5px 10px 5px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.space-title {
+  /*border: solid red 1px;*/
+  padding-bottom: 10px;
+  /*text-align: left;*/
+}
+
+#page-line {
+  border-color: #adccff;
+  border-width: 3px;
+  margin-left: 10px;
+}
+
+#description {
+  /*border: solid red 1px;*/
+  padding: 5px 5px 20px 5px;
+}
+
+/*.host-details {
+
+}*/
+
+.btn-success {
+  color: #000;
+  background-color: #adccff;
+}
+#required {
+  font-size: 0.75em ;
+}
+
+#enter-details {
+  font-size: 1.15em;
+}
+
+body {
+  background: url('https://static1.squarespace.com/static/543c4bcae4b0d7a8d924ab99/55fdb2cae4b0b58aefa9ab0e/5641727ee4b0a6ed01ca01eb/1447129744828/ONLY+VICTORIES+-+HOUSE+IN+THE+HILL+8.jpg?format=2500w') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
