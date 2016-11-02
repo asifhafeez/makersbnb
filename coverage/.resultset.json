@@ -12,11 +12,6 @@
         1,
         null,
         1,
-<<<<<<< HEAD
-        null,
-        null,
-        1,
-=======
         null,
         1,
         10,
@@ -34,7 +29,6 @@
         3,
         null,
         5,
->>>>>>> 43cf05065e1165f8d4548128d0223985d0fc0040
         null,
         null,
         1,
@@ -68,8 +62,8 @@
         1,
         1,
         1,
-        null,
-        null,
+        1,
+        1,
         null,
         null
       ],
@@ -120,6 +114,57 @@
       "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/space_spec.rb": [
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        2,
         2,
         2,
         2,
@@ -146,10 +191,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1478021638
-=======
-    "timestamp": 1478023403
->>>>>>> 43cf05065e1165f8d4548128d0223985d0fc0040
+    "timestamp": 1478100031
   }
 }
