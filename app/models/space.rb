@@ -9,9 +9,9 @@ class Space
   property :host,           String
   property :email,          String
   property :name,           String, required: true
-  property :price,          String, required: true
-  property :description,    String, required: true
-  #property :from,           Date
-  #property :to,             Date
+  property :price,          Decimal, precision: 8, scale: 2, required: true
+  property :description,    Text, required: true
+  property :from,           Date
+  property :to,             Date
 
 end
