@@ -56,3 +56,21 @@ As a guest,
 Until a host confirms a booking on a space
 I can still book a space thats available
 ```
+
+```
+As a host,
+So that I can verify my identity
+I can sign up as a host with my email and password
+```
+
+```
+As a host,
+So that I can use my account
+I can sign in with my email and password
+```
+```
+As a host,
+So that I can make sure nobody else is using my account
+I can log out
+```
+
