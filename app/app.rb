@@ -42,10 +42,8 @@ post '/booking_request' do
   booking = BookingRequest.new(name: params[:name], email: params[:email],
                                datefrom: params[:from], dateto: params[:to],
                                purpose: params[:purpose])
-p booking
-p "hello1"
+
    if booking.save
-     p "hello2"
      flash.keep[:notice] = ["Your booking is confirmed!"]
     redirect '/'
    else
@@ -73,7 +71,7 @@ end
   post '/sessions' do
     host = Host.authenticate(params[:Email], params[:Password])
     if host
-      session[:host_id] = host.id 
+      session[:host_id] = host.id
       redirect '/'
     else
       redirect '/'
@@ -90,6 +88,6 @@ end
      @current_host ||= Host.get(session[:host_id])
    end
   end
-  
+
   run! if app_file == $0
 end
