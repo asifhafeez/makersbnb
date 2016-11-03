@@ -23,9 +23,28 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+       <% if current_host %> 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Login</a></li>
+            <li><a href="/spaces">Add Space</a></li>
+            <li><a href="#">Host Profile</a></li>
+            <li><form id = "log-out-form" method='post' action='/sessions'>
+              <input type='hidden' name='_method' value='delete'>
+              <button type="submit" class="btn btn-primary" id="log-button">Log Out</button>
+            </form>
+          </li>
+
+        </ul>
+          <% else %>
+          <form id = "log-in-form" class="navbar-form navbar-right" method="post" action="/sessions">
+           <div class="form-group">
+             <input type="email" class="form-control" placeholder="Email" name="Email">
+                  <input type="password" class="form-control" placeholder="Password" name="Password">
+             </div>
+              <button type="submit" class="btn btn-primary" id="log-button">Log In</button>
+          </form>
+    
+            <% end %>
+
         </ul>
       </div>
     </div>
