@@ -27,5 +27,9 @@ class Makersbnb < Sinatra::Base
     redirect '/'
   end
 
+  post '/hosts' do
+    host = Host.new(email: params[:email], password: params[:password])
+  end
+
   run! if app_file == $0
 end
