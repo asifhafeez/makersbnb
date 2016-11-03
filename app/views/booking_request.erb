@@ -1,4 +1,9 @@
 <div class="container">
+  <div class="jumbotron center">
+    <p>Currently using this <span class="italics">phat</span> jumbo to center our form vertically!</p>
+  </div>
+</div>
+<div class="container">
   <div class="row booking-request2">
     <div class="col-md-2">
       <% if flash[:notice] %>
@@ -12,7 +17,7 @@
       </div>
       <% end %>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 ipsum">
       <form action="/booking_request" method="post">
         <div class="form-group">
           <label for="name">Name *</label>
@@ -40,7 +45,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label for="description">Purpose of visit</label>
-              <input type="text" class="form-control" name="purpose" placeholder="business, pleasure, weekend-getaway">
+              <textarea class="form-control text-area "name="purpose" placeholder="business, pleasure, weekend-getaway"></textarea>
             </div>
             <div class="button text-center">
               <input class="btn btn-success btn-lg "type="submit" value="Book Space">

@@ -1,6 +1,6 @@
-h1 {
+/*h1 {
   text-align: center;
-}
+}*/
 
 .form_data {
   padding: auto;
@@ -34,7 +34,6 @@ h1 {
 
 .space-title {
   padding-bottom: 10px;
-  /*text-align: left;*/
 }
 
 #page-line {
@@ -82,5 +81,45 @@ body {
 #available-tag {
   text-align: left;
   font-weight: bold
+}
 
+.border {
+  border: solid red 1px;
+}
+
+.ipsum {
+  background-color: rgba(225, 227, 232, 0.5);
+  border: solid #adccff 1px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:20px;
+}
+
+.text-area {
+  resize: none;
+  width:100%;
+}
+.italics {
+  font-style:oblique;
+  font-weight: bold;
+}
+.jumbo {
+  background: url(http://cdn.1001freedownloads.com/wallpaper/19983/preview/dogs-vs-jumbo-elephants-race-humor-funny-photomanipulation_preview_850b.jpg) no-repeat center;
+  height:50%
 }
