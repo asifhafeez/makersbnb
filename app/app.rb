@@ -15,6 +15,10 @@ class Makersbnb < Sinatra::Base
     erb :index
   end
 
+  get '/spaces' do
+    erb :add_space
+  end
+  
   post '/spaces' do
   	space = Space.new(host: params[:host], email: params[:email],
   	 									name: params[:name], price: params[:price],
