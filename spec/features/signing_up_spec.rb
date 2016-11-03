@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-feature 'sign up as a host' do
-	scenario 'let user sign up as a host' do
+feature 'sign up as a host', focus: true do
+	scenario 'let user sign up as a host with correct details' do
 		visit '/'
 	  fill_in 'first_name', with: 'Brian'
 	  fill_in 'last_name', with: 'Chesky'
