@@ -18,6 +18,15 @@
               <h3>£<%= "%.2f" % space.price.truncate(2) %>  </h3>
             </div>
           </div>
+          <div class="row">
+              <div class="col-md-8 space-title">
+              </div>
+              <div class="col-md-4 space-title">
+                <p id= "available-tag"> Available: </p>
+                <p> from  <span class="availability"> <%= space.from.strftime('%FT%T') %> </span> </p>
+                <p> to    <span class="availability"> <%= space.to %> </span> </p>
+              </div>
+            </div>
           <hr id="page-line">
           <div id="description">
             <%= space.description %> <br>

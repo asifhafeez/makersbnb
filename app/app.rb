@@ -26,6 +26,8 @@ class Makersbnb < Sinatra::Base
   	 									name: params[:name], price: params[:price],
                       from: params[:from], to: params[:to],
   									  description: params[:description])
+    p params[:to]
+    p params[:from]
     if space.save
       flash.keep[:notice] = ["Your space was listed!"]
       p flash[:notice]
