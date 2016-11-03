@@ -4,6 +4,8 @@ describe BookingRequest do
 
   it { should have_property :name }
   it { should have_property :email }
+  it { should have_property :datefrom }
+  it { should have_property :dateto }
   it { should have_property :purpose }
 
   context 'checking data input types' do
