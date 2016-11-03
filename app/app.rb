@@ -36,12 +36,18 @@ class Makersbnb < Sinatra::Base
   erb :booking_request
 end
 
-# post '/booking_request' do
-#   booking = BookingRequest.new(name: params[:name], email: params[:email],
-#                                datefrom: params[:datefrom], dateto: params[:dateto],
-#                                purpose: params[:purpose])
-#   redirect '/'
-# end
+post '/booking_request' do
+  booking = BookingRequest.new(name: params[:name], email: params[:email],
+                               datefrom: params[:datefrom], dateto: params[:dateto],
+                               purpose: params[:purpose])
+   if booking.save
+    flash.keep[:notice] = ["Your booking is confirmed!"]
+    p flash[:notice]
+  else
+    flash.keep[:notice] = booking.errors.full_messages
+   end
+  redirect '/'
+end
 
   post '/hosts' do
     host = Host.new(first_name: params[:first_name],
