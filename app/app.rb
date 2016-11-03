@@ -13,21 +13,20 @@ class Makersbnb < Sinatra::Base
   set :session_secret, 'super secret'
 
   get '/' do
-  	@spaces = Space.all
+    @spaces = Space.all
     erb :index
   end
 
   get '/spaces' do
     erb :add_space
   end
-  
+
   post '/spaces' do
   	space = Space.new(host: params[:host], email: params[:email],
   	 									name: params[:name], price: params[:price],
                       from: params[:from], to: params[:to],
   									  description: params[:description])
-    p params[:to]
-    p params[:from]
+
     if space.save
       flash.keep[:notice] = ["Your space was listed!"]
       p flash[:notice]
@@ -36,6 +35,24 @@ class Makersbnb < Sinatra::Base
     end
     redirect '/'
   end
+
+  get '/booking_request' do
+  erb :booking_request
+end
+
+post '/booking_request' do
+  booking = BookingRequest.new(name: params[:name], email: params[:email],
+                               datefrom: params[:from], dateto: params[:to],
+                               purpose: params[:purpose])
+
+   if booking.save
+     flash.keep[:notice] = ["Your booking is confirmed!"]
+    redirect '/'
+   else
+    flash.keep[:notice] = booking.errors.full_messages
+    redirect '/booking_request'
+   end
+end
 
   post '/hosts' do
     host = Host.new(first_name: params[:first_name],
@@ -56,7 +73,7 @@ class Makersbnb < Sinatra::Base
   post '/sessions' do
     host = Host.authenticate(params[:Email], params[:Password])
     if host
-      session[:host_id] = host.id 
+      session[:host_id] = host.id
       redirect '/'
     else
       redirect '/'
@@ -73,6 +90,6 @@ class Makersbnb < Sinatra::Base
      @current_host ||= Host.get(session[:host_id])
    end
   end
-  
+
   run! if app_file == $0
 end

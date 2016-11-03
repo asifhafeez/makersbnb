@@ -6,7 +6,11 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <% if current_host %>
+      <div class="col-sm-12">
+        <% else %>
+      <div class="col-sm-8">
+    <% end %>
       <ul class="unordered-list">
         <% @spaces.each do |space| %>
         <li class="form-item">
@@ -23,8 +27,8 @@
               </div>
               <div class="col-md-4 space-title">
                 <p id= "available-tag"> Available: </p>
-                <p> from  <span class="availability"> <%= space.from.strftime('%FT%T') %> </span> </p>
-                <p> to    <span class="availability"> <%= space.to %> </span> </p>
+                <p> from  <span class="availability"> <%= space.from.strftime("%A, %d %b %Y") %> </span> </p>
+                <p> to <span class="availability"> <%= space.to.strftime("%A, %d %b %Y") %> </span> </p>
               </div>
             </div>
           <hr id="page-line">
@@ -44,15 +48,16 @@
       </ul>
     </div>
     <div class="col-sm-4">
+      <% if !current_host %>
       <p id='enter-details'>Sign up to add your own space!</p>
       <% if flash[:notice] %>
-       <div class="alert alert-info">
-          <ul class = "unordered-list">
-            <% flash[:notice].each do |error| %>
-              <li><%= error %></li>
-            <% end %>
-          </ul>
-       </div>
+      <div class="alert alert-info">
+        <ul class ="unordered-list">
+          <% flash[:notice].each do |error| %>
+          <li><%= error %></li>
+          <% end %>
+        </ul>
+      </div>
       <% end %>
 
        <form action="/hosts" method="post">
@@ -80,7 +85,7 @@
            <input type="submit" class="btn btn-success btn-lg" value='Sign Up'>
          </div>
        </form>
-
+      <% end %>
     </div>
   </div>
 </div>
