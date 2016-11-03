@@ -6,7 +6,11 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <% if current_host %>
+      <div class="col-sm-12">
+        <% else %>
+      <div class="col-sm-8">
+    <% end %>
       <ul class="unordered-list">
         <% @spaces.each do |space| %>
         <li class="form-item">
@@ -35,6 +39,7 @@
       </ul>
     </div>
     <div class="col-sm-4">
+      <% if !current_host %>
       <p id='enter-details'>Sign up to add your own space!</p>
       <% if flash[:notice] %>
       <div class="alert alert-info">
@@ -46,32 +51,32 @@
       </div>
       <% end %>
 
-      <form action="/hosts" method="post">
-        <div class="form-group">
-          <label for="first_name">First Name *:</label>
-          <input type="text" class="form-control" name="first_name" placeholder="first name">
-        </div>
-        <div class="form-group">
-          <label for="last_name">Last Name :</label>
-          <input type="text" class="form-control" name="last_name" placeholder="last name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email *:</label>
-          <input type="email" class="form-control" name="email" placeholder="email">
-        </div>
-        <div class="form-group">
-          <label for="password">Password *:</label>
-          <input type="password" class="form-control" name="password" placeholder="password">
-        </div>
-        <div class="form-group">
-          <label for="password_confirmation">Password Confirmation *:</label>
-          <input type="password" class="form-control" name="password_confirmation" placeholder="password confirmation">
-        </div>
-        <div class="button text-center">
-          <input type="submit" class="btn btn-success btn-lg" value='Sign Up'>
-        </div>
-      </form>
-
+       <form action="/hosts" method="post">
+         <div class="form-group">
+           <label for="first_name">First Name *:</label>
+           <input type="text" class="form-control" name="first_name" placeholder="first name">
+         </div>
+         <div class="form-group">
+           <label for="last_name">Last Name :</label>
+           <input type="text" class="form-control" name="last_name" placeholder="last name">
+         </div>
+         <div class="form-group">
+           <label for="log_in_email">Email *:</label>
+           <input type="email" class="form-control" name="email" placeholder="email">
+         </div>
+         <div class="form-group">
+           <label for="log_in_password">Password *:</label>
+           <input type="password" class="form-control" name="password" placeholder="password">
+         </div>
+         <div class="form-group">
+           <label for="password_confirmation">Password Confirmation *:</label>
+           <input type="password" class="form-control" name="password_confirmation" placeholder="password confirmation">
+         </div>
+         <div class="button text-center">
+           <input type="submit" class="btn btn-success btn-lg" value='Sign Up'>
+         </div>
+       </form>
+      <% end %>
     </div>
   </div>
 </div>

@@ -32,4 +32,15 @@ describe Host do
 	it { should have_property :last_name }
 	it { is_expected.to have_property :password_digest }
 
+	let!(:host) do
+		Host.create(email: "brian@brian.com", password: "password",
+								password_confirmation: "password", 
+								first_name: "Brian", last_name: "Chemsky")
+	end
+
+	it 'authenticates with valid email and password' do
+		authenticated_host = Host.authenticate(host.email, host.password)
+		expect(authenticated_host).to eq host
+	end
+
 end

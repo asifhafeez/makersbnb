@@ -2,9 +2,7 @@ require 'bcrypt'
 
 class Host
 	include DataMapper::Resource
-
-
-
+	
   property :id,    					 Serial
 	property :email, 					 String, required: true
 	property :first_name, 		 String, required: true
@@ -18,5 +16,14 @@ class Host
 	def password=(password)
 		@password = password
 		self.password_digest = BCrypt::Password.create(password)
+	end
+
+	def self.authenticate(email, password)
+		host = first(email: email)
+		if host && BCrypt::Password.new(host.password_digest) == password
+			host
+		else
+			nil
+		end
 	end
 end
