@@ -36,7 +36,6 @@ h1 {
 }
 
 .space-title {
-  /*border: solid red 1px;*/
   padding-bottom: 10px;
   /*text-align: left;*/
 }
@@ -48,7 +47,6 @@ h1 {
 }
 
 #description {
-  /*border: solid red 1px;*/
   padding: 5px 5px 20px 5px;
 }
 
@@ -87,4 +85,11 @@ body {
 #available-tag {
   text-align: left;
   font-weight: bold
+
+.form-group {
+  : solid green 1px;
+}
+
+.text-area {
+  height: auto;
 }
