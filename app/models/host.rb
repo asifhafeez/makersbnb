@@ -2,9 +2,7 @@ require 'bcrypt'
 
 class Host
 	include DataMapper::Resource
-
-
-
+	
   property :id,    					 Serial
 	property :email, 					 String, required: true
 	property :first_name, 		 String, required: true
