@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/app.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/app.rb": [
         1,
         1,
         1,
@@ -15,26 +15,45 @@
         1,
         null,
         1,
-        9,
-        9,
-        null,
-        null,
-        1,
-        5,
+        7,
+        7,
         null,
         null,
         1,
         5,
         null,
         null,
+        1,
+        5,
+        null,
         null,
         5,
-        2,
-        2,
+        0,
+        0,
         null,
         3,
         null,
+        3,
+        null,
+        null,
+        1,
+        10,
+        null,
+        null,
+        1,
         5,
+        null,
+        null,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        null,
+        5,
+        5,
+        null,
         null,
         null,
         1,
@@ -54,12 +73,7 @@
         1,
         null
       ],
-<<<<<<< HEAD
-<<<<<<< HEAD
       "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/datamapper_setup.rb": [
-=======
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/datamapper_setup.rb": [
->>>>>>> aeacd3aa7705038951af994ce82fe59cfb366b61
         1,
         1,
         1,
@@ -73,7 +87,7 @@
         1,
         1
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/space.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/models/space.rb": [
         1,
         null,
         1,
@@ -92,20 +106,24 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/listing.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/models/booking_request.rb": [
         1,
         null,
         1,
-        null,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         null,
         null,
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/app/models/host.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/app/models/host.rb": [
         1,
         null,
         1,
@@ -119,20 +137,154 @@
         1,
         1,
         null,
-=======
-      "/Users/stuartcooper/Google_Drive/makers/makersbnb/spec/space_spec.rb": [
->>>>>>> add_bookingrequest_class
         1,
         1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/booking_request_spec.rb": [
+        1,
+        null,
         1,
         null,
         2,
         2,
-<<<<<<< HEAD
+        2,
+        2,
+        2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/features/signing_up_spec.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/features/create_booking_request_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/features/list_space_management_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        3,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1,
+        null,
+        null
+      ],
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/features/signing_up_spec.rb": [
         1,
         null,
         1,
@@ -158,7 +310,7 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/host_spec.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/host_spec.rb": [
         1,
         null,
         1,
@@ -195,30 +347,16 @@
         null,
         null
       ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/listing_spec.rb": [
+      "/Users/michelleepstein/Documents/Course/Week_6/makersbnb/spec/space_spec.rb": [
         1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/asif/Desktop/makers/week-6/makersbnb/spec/space_spec.rb": [
-        1,
-=======
         2,
         2,
         2,
         2,
         2,
->>>>>>> add_bookingrequest_class
+        2,
+        2,
         null,
         1,
         1,
@@ -266,14 +404,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "timestamp": 1478165977
-=======
-    "timestamp": 1478171024
->>>>>>> add_bookingrequest_class
-=======
-    "timestamp": 1478177144
->>>>>>> aeacd3aa7705038951af994ce82fe59cfb366b61
+    "timestamp": 1478197984
   }
 }
