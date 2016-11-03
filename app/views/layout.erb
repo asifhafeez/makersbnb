@@ -27,21 +27,23 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/spaces">Add Space</a></li>
             <li><a href="#">Host Profile</a></li>
-            <form method='post' action='/sessions'>
+            <li><form id = "log-out-form" method='post' action='/sessions'>
               <input type='hidden' name='_method' value='delete'>
-              <input type='submit' value='Log Out'>
+              <button type="submit" class="btn btn-primary" id="log-button">Log Out</button>
             </form>
+          </li>
+
         </ul>
           <% else %>
-          <form class="navbar-form navbar-right">
+          <form id = "log-in-form" class="navbar-form navbar-right" method="post" action="/sessions">
            <div class="form-group">
-             <input type="email" class="form-control" placeholder="log_in_email" name="log_in_email">
-                  <input type="password" class="form-control" placeholder="log_in_password" name="log_in_password">
-
+             <input type="email" class="form-control" placeholder="Email" name="Email">
+                  <input type="password" class="form-control" placeholder="Password" name="Password">
              </div>
-             <button type="submit" class="btn btn-default">Log In</button>      
+              <button type="submit" class="btn btn-primary" id="log-button">Log In</button>
+          </form>
+    
             <% end %>
-        </form>
 
         </ul>
       </div>

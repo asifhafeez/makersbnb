@@ -17,4 +17,13 @@ class Host
 		@password = password
 		self.password_digest = BCrypt::Password.create(password)
 	end
+
+	def self.authenticate(email, password)
+		host = first(email: email)
+		if host && BCrypt::Password.new(host.password_digest) == password
+			host
+		else
+			nil
+		end
+	end
 end
