@@ -6,7 +6,11 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <% if current_host %>
+      <div class="col-sm-12">
+        <% else %>
+      <div class="col-sm-8">
+    <% end %>
       <ul class="unordered-list">
         <% @spaces.each do |space| %>
         <li class="form-item">
@@ -35,6 +39,7 @@
       </ul>
     </div>
     <div class="col-sm-4">
+      <% if !current_host %>
       <p id='enter-details'>Sign up to add your own space!</p>
       <% if flash[:notice] %>
       <div class="alert alert-info">
@@ -71,6 +76,7 @@
            <input type="submit" class="btn btn-success btn-lg" value='Sign Up'>
          </div>
        </form>
+      <% end %>
     </div>
   </div>
 </div>
