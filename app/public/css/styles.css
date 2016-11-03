@@ -82,5 +82,17 @@ body {
 #available-tag {
   text-align: left;
   font-weight: bold
-
 }
+
+.ipsum {
+  background-color: rgba(225, 227, 232, 0.5);
+  border: solid #adccff 1px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.jumbo {
+  background: url(http://cdn.1001freedownloads.com/wallpaper/19983/preview/dogs-vs-jumbo-elephants-race-humor-funny-photomanipulation_preview_850b.jpg) no-repeat center;
+  height:50%;
+ }
