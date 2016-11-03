@@ -2,22 +2,20 @@
 
   feature 'Listing a space' do
     scenario 'let a user add a space for rent from MakersBnB' do
-      visit '/'
+      visit '/spaces'
       add_space_form
       expect{click_button 'Add Space'}.to change{Space.count}.by(1)
     end
 
     scenario 'shows the space added by the user' do
-      visit '/'
+      visit '/spaces'
       add_space_form
       click_button 'Add Space'
       expect(page).to have_content('Watermarque')
     end
 
     scenario 'cannot create a space without a space name' do
-      visit '/'
-      fill_in 'host',         with: 'Brian Chesky'
-      fill_in 'email',        with: 'brianchesky@airbnb.com'
+      visit '/spaces'
       fill_in 'name',         with: ''
       fill_in 'price',        with: 10
       fill_in 'description',  with: 'Twin rooms'
@@ -26,9 +24,7 @@
     end
 
     scenario 'cannot create a space without a space name' do
-      visit '/'
-      fill_in 'host',         with: 'Brian Chesky'
-      fill_in 'email',        with: 'brianchesky@airbnb.com'
+      visit '/spaces'
       fill_in 'name',         with: 'Watermarque'
       fill_in 'price',        with: ''
       fill_in 'description',  with: 'Twin rooms'
@@ -37,9 +33,7 @@
     end
 
     scenario 'cannot create a space without a space name' do
-      visit '/'
-      fill_in 'host',         with: 'Brian Chesky'
-      fill_in 'email',        with: 'brianchesky@airbnb.com'
+      visit '/spaces'
       fill_in 'name',         with: 'Watermarque'
       fill_in 'price',        with: 10
       fill_in 'description',  with: ''
