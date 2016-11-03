@@ -1,6 +1,3 @@
-ENV['RACK_ENV'] = 'test'
-require_relative '../datamapper_setup'
-
 class BookingRequest
 
   include DataMapper::Resource

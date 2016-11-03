@@ -75,3 +75,11 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.form-group {
+  : solid green 1px;
+}
+
+.text-area {
+  height: auto;
+}
