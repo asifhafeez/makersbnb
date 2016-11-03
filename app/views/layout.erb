@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MakersBnB</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">MakersBnB</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+       <% if current_host %>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/spaces">Add Space</a></li>
+            <li><a href="#">Host Profile</a></li>
+            <li><form id = "log-out-form" method='post' action='/sessions'>
+              <input type='hidden' name='_method' value='delete'>
+              <button type="submit" class="btn btn-primary" id="log-button">Log Out</button>
+            </form>
+          </li>
+
+        </ul>
+          <% else %>
+          <form id = "log-in-form" class="navbar-form navbar-right" method="post" action="/sessions">
+           <div class="form-group">
+             <input type="email" class="form-control" placeholder="Email" name="Email">
+                  <input type="password" class="form-control" placeholder="Password" name="Password">
+             </div>
+              <button type="submit" class="btn btn-primary" id="log-button">Log In</button>
+          </form>
+
+            <% end %>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <%= yield %>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+<!-- <footer class="footer">
+ <div class="panel panel-default">
+   <div class="panel-footer center">Panel footer</div>
+ </div>
+</footer>
+</html> -->

@@ -18,10 +18,10 @@ h1 {
   text-align: center;
 }
 
-span {
+.bold {
   font-weight:bold;
 }
-#form-list {
+.unordered-list {
   list-style-type: none;
   padding: 50px;
   border: solid #adccff 1px;
@@ -74,4 +74,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#left-align  {
+  text-align: left;
+}
+
+.availability {
+  background-color: lightblue;
+}
+
+#available-tag {
+  text-align: left;
+  font-weight: bold
 }
