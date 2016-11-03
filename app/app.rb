@@ -38,15 +38,17 @@ end
 
 post '/booking_request' do
   booking = BookingRequest.new(name: params[:name], email: params[:email],
-                               datefrom: params[:datefrom], dateto: params[:dateto],
+                               datefrom: params[:from], dateto: params[:to],
                                purpose: params[:purpose])
    if booking.save
     flash.keep[:notice] = ["Your booking is confirmed!"]
     p flash[:notice]
-  else
+    redirect '/'
+   else
     flash.keep[:notice] = booking.errors.full_messages
+    redirect '/booking_request'
    end
-  redirect '/'
+
 end
 
   post '/hosts' do
