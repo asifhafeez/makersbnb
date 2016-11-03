@@ -8,6 +8,7 @@ class Makersbnb < Sinatra::Base
   register Sinatra::Flash
 
   set :sessions, true
+  set :session_secret, 'super secret'
 
   get '/' do
   	@spaces = Space.all
@@ -24,6 +25,20 @@ class Makersbnb < Sinatra::Base
       p flash[:notice]
     else
       flash.keep[:notice] = space.errors.full_messages
+    end
+    redirect '/'
+  end
+
+  post '/hosts' do
+    host = Host.new(first_name: params[:first_name],
+                    last_name: params[:last_name],
+                    email: params[:email],
+                    password: params[:password],
+                    password_confirmation: params[:password_confirmation])
+    if host.save
+      flash.keep[:notice] = ["Successfully signed up!"]
+    else
+      flash.keep[:notice] = host.errors.full_messages
     end
     redirect '/'
   end
