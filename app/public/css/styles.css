@@ -6,10 +6,7 @@
   padding: auto;
 }
 
-.text-area {
-  height: 4px ;
-  width: 360px ;
-}
+
 
 .center {
   text-align: center;
@@ -83,6 +80,7 @@ body {
   font-weight: bold
 }
 
+
 .border {
   border: solid red 1px;
 }
@@ -114,6 +112,10 @@ body {
 .text-area {
   resize: none;
   width:100%;
+}
+.text-area {
+  height: 4px;
+  width: 360px;
 }
 .italics {
   font-style:oblique;
