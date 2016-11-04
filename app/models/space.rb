@@ -10,6 +10,7 @@ class Space
   property :from,           Date
   property :to,             Date
 
+  has n, :booking_requests
   belongs_to :host
 
 end
