@@ -1,55 +1,70 @@
-<div class="col-sm-4">
-  <p id="enter-details">Please enter the details of the space available to rent below:</p>
- 
-    
-  <% if flash[:notice] %>
-     <div class="alert alert-info">
-      <ul class = "unordered-list">
-       <% flash[:notice].each do |error| %>
-         <li><%= error %></li>
-       <% end %>
-      </ul>
+<div class="container ">
+  <div class="jumbotron center jumbo">
+    <p>Guys, do we want something here?</p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+
     </div>
- <% end %>
-  
-  <p id="required">* required</p>
-  <form action="/spaces" method="post">
-    <div class="form-group">
-      <label for="host">Host's name *:</label>
-      <input type="text" class="form-control" name="host" placeholder="your name" >
-    </div>
-    <div class="form-group">
-      <label for="email">Host's email *:</label>
-      <input type="email" class="form-control" name="email" placeholder="your email" >
-    </div>
-    <div class="form-group">
-      <label for="name">Space name *:</label>
-      <input type="text" class="form-control" name="name" placeholder="space name" >
-    </div>
-    <div class="form-group">
-      <label for="price">Price *:</label>
-      <input type="number" class="form-control" name="price" placeholder="price" >
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="from">Available From *:</label>
-          <input type="date" class="form-control" name="from" placeholder="available from" >
-        </div>
+    <div class="col-md-8 ipsum">
+      <p id="enter-details">Please enter the details of the space available to rent below:</p>
+
+
+      <% if flash[:notice] %>
+      <div class="alert alert-info">
+        <ul class = "unordered-list">
+          <% flash[:notice].each do |error| %>
+          <li><%= error %></li>
+          <% end %>
+        </ul>
       </div>
-      <div class="col-md-6">
+      <% end %>
+
+      <p id="required">* required</p>
+      <form action="/spaces" method="post">
         <div class="form-group">
-          <label for="to">Available To *:</label>
-          <input type="date" class="form-control" name="to" placeholder="available to" >
+          <label for="host">Host's name *:</label>
+          <input type="text" class="form-control" name="host" placeholder="your name" >
         </div>
-      </div>
+        <div class="form-group">
+          <label for="email">Host's email *:</label>
+          <input type="email" class="form-control" name="email" placeholder="your email" >
+        </div>
+        <div class="form-group">
+          <label for="name">Space name *:</label>
+          <input type="text" class="form-control" name="name" placeholder="space name" >
+        </div>
+        <div class="form-group">
+          <label for="price">Price *:</label>
+          <input type="number" class="form-control" name="price" placeholder="price" >
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="from">Available From *:</label>
+              <input type="date" class="form-control" name="from" placeholder="available from" >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="to">Available To *:</label>
+              <input type="date" class="form-control" name="to" placeholder="available to" >
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea class="form-control text-area" name="description" placeholder="enter space description here"></textarea>
+        </div>
+        <div class="button text-center">
+          <input class="btn btn-success btn-lg "type="submit" value="Add Space">
+        </div>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="description">Description:</label>
-      <textarea class="form-control text-area" name="description" placeholder="enter space description here"></textarea>
+    <div class="col-md-2">
+
     </div>
-    <div class="button text-center">
-      <input class="btn btn-success btn-lg "type="submit" value="Add Space">
-    </div>
-  </form>
+  </div>
 </div>
