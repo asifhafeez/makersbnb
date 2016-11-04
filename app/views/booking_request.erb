@@ -18,7 +18,7 @@
       <% end %>
     </div>
     <div class="col-md-8 ipsum">
-      <form action="/booking_request" method="post">
+      <form action="/booking_request/<%= @space.id %>" method="post">
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" class="form-control" name="name" placeholder="your name" >

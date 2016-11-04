@@ -64,21 +64,23 @@ class Makersbnb < Sinatra::Base
     end
   end
 
-  get '/booking_request' do
+  get '/booking_request/:id' do
+    @space = Space.get(params[:id])
     erb :booking_request
   end
 
-  post '/booking_request' do
+  post '/booking_request/:space_id' do
+    @space = Space.get(params[:space_id])
+    p @space
     booking = BookingRequest.new(name: params[:name], email: params[:email],
     datefrom: params[:from], dateto: params[:to],
-    purpose: params[:purpose])
-
+    purpose: params[:purpose], space_id: params[:space_id])
     if booking.save
       flash.keep[:notice] = ["Your booking is confirmed!"]
       redirect '/'
     else
       flash.keep[:notice] = booking.errors.full_messages
-      redirect '/booking_request'
+      redirect '/booking_request/:space_id'
     end
   end
 

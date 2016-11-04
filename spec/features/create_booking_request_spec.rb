@@ -1,17 +1,19 @@
 require 'spec_helper'
 
- feature 'Creating a booking request', focus: :true do
+ feature 'Creating a booking request' do
    create_host
-   create_space
 
-   scenario 'let a user create a booking request on MakersBnB' do
-    click_button 'Book Space'
+   scenario 'let a user create a booking request on MakersBnB', focus: :true do
+     sign_in
+     add_space_form
+     click_button "Add Space"
+     click_button "Book Space"
      fill_in 'name',         with: 'Brian Chesky'
      fill_in 'email',        with: 'brian.chesky@airbnb.com'
      fill_in 'from',         with: Date.today
      fill_in 'to',           with: Date.today
      fill_in 'purpose',      with: 'pleasure'
-     expect{click_button 'Book Space'}.to change{space.booking_requests.count}.by(1)
+     expect{click_button 'Book Space'}.to change{host.spaces.booking_requests.count}.by(1)
    end
 
      scenario 'cannot create a booking request without a name' do
