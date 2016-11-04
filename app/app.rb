@@ -37,10 +37,8 @@ class Makersbnb < Sinatra::Base
     host = Host.authenticate(params[:Email], params[:Password])
     if host
       session[:host_id] = host.id
-      redirect '/'
-    else
-      redirect '/'
     end
+    redirect '/'
   end
 
   delete '/sessions' do
