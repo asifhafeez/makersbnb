@@ -1,7 +1,5 @@
 describe Space do
 
-  it { should have_property :host }
-  it { should have_property :email }
   it { should have_property :name }
   it { should have_property :price }
   it { should have_property :description }
@@ -9,17 +7,6 @@ describe Space do
   it { should have_property :to }
 
   context 'checking data input types' do
-    it 'confirms input type of host is string' do
-      space = Space.new
-      space.host = 'John'
-      expect(space.host).to be_instance_of(String)
-    end
-
-    it 'confirms input type of email is string' do
-      space = Space.new
-      space.email = 'john@john.com'
-      expect(space.email).to be_instance_of(String)
-    end
 
     it 'confirms input type of name is string' do
       space = Space.new

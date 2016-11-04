@@ -37,10 +37,10 @@
           </div>
           <div class="row">
             <div class="col-md-6 host-details">
-              <span>Host:</span>  <%= space.host %>
+              <span>Host:</span>  <!-- space.host.email -->
             </div>
             <div class="col-md-6 host-details">
-              <span>Email:</span> <%= space.email %>
+              <span>Email:</span> <!-- space.host.email -->
             </div>
           </div>
         </li> <br>
@@ -50,15 +50,6 @@
     <div class="col-sm-4">
       <% if !current_host %>
       <p id='enter-details'>Sign up to add your own space!</p>
-      <% if flash[:notice] %>
-      <div class="alert alert-info">
-        <ul class ="unordered-list">
-          <% flash[:notice].each do |error| %>
-          <li><%= error %></li>
-          <% end %>
-        </ul>
-      </div>
-      <% end %>
 
        <form action="/hosts" method="post">
          <div class="form-group">
