@@ -1,3 +1,5 @@
+require 'data_mapper'
+
 class BookingRequest
 
   include DataMapper::Resource
@@ -10,6 +12,6 @@ class BookingRequest
   property :dateto,    Date,    required: true
   property :purpose,   String
 
-  # has n, :spaces
+  belongs_to :space
 
 end

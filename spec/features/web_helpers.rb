@@ -25,6 +25,14 @@ def create_host
     end
 end
 
+def create_space
+    let(:space) do
+        Space.create(name: "Foo", price: 10,
+                    description: "foobar@example.com", from: Date.today,
+                    to: Date.today, host_id: host.id)
+    end
+end
+
 def sign_in
  visit '/'
     fill_in :Email, with: host.email
