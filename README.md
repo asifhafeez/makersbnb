@@ -1,14 +1,10 @@
 ___
 ## MakersBnB
-___
-___
-Technologies involved: Ruby, Bootstrap, OOD
-Testing via RSpec and Coveralls support is integrated
-___
-___
-Description of Project
-___
+
+Technologies involved: Ruby, Sinatra, Bootstrap, OOD, testing via RSpec and Coveralls support is integrated
+
 This is a mock project that implements the basic features of AirBnB:
+___
 
 ```
 As a host,
