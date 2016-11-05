@@ -1,35 +1,44 @@
 ___
 ## MakersBnB
 ___
+___
+Technologies involved: Ruby, Bootstrap, OOD
+Testing via RSpec and Coveralls support is integrated
+___
+___
+Description of Project
+___
+This is a mock project that implements the basic features of AirBnB:
+
 ```
-~~As a host,~~
-~~So my space can be available to rent~~
-~~I can list a space~~
+As a host,
+So my space can be available to rent
+I can list a space
 ```
 ```
-~~As a host,~~
-~~So I can rent multiple spaces~~
-~~I would like to list multiple spaces~~
+As a host,
+So I can rent multiple spaces
+I would like to list multiple spaces
 ```
 ```
-~~As a host,~~
-~~So that guests know when my space is available,~~
+As a host,
+So that guests know when my space is available,
 I would like to offer a range of available dates
 ```
 ```
-~~As a host,~~
-~~So that I can describe my space~~
-~~I would like to give my space a description~~
+As a host,
+So that I can describe my space
+I would like to give my space a description
 ```
 ```
-~~As a host,~~
-~~So that I can name my space~~
-~~I would like to give my space a name~~
+As a host,
+So that I can name my space
+I would like to give my space a name
 ```
 ```
-~~As a host,~~
-~~So that I can price my space~~
-~~I would like to give my space a price~~
+As a host,
+So that I can price my space
+I would like to give my space a price
 ```
 ```
 As a guest,
@@ -73,4 +82,3 @@ As a host,
 So that I can make sure nobody else is using my account
 I can log out
 ```
-
